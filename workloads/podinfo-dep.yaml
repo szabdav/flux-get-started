@@ -29,7 +29,7 @@ spec:
       initContainers:
       - name: init
         image: alpine:3.10
-        command:
+        command: 
         - sleep
         - "1"
       containers:
@@ -55,6 +55,7 @@ spec:
         - --level=info
         - --random-delay=false
         - --random-error=false
+        - --ui-message='Welcome to Flux'
         env:
         - name: PODINFO_UI_COLOR
           value: "#34577c"
